@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到SUSTech Gamer</title>
+    <link rel="stylesheet" type="text/css" href="../css/Store.css">
+    <script rel="text/javascript" src="../script/Store.js"></script>
+</head>
+<body id="body">
+    <div id="top_bar">
+        <ul id="top_bar_item">
+            <li><a href="Store.html">商城</a></li>
+            <li><a href="Library.html">库存</a></li>
+            <li><a href="Community.html">社区</a></li>
+            <li><a href="About.html">关于</a></li>
+            <li>
+                <label><input type="text" id="search_content"></label>
+                <button onclick="search()" id="search_button"></button>
+            </li>
+            <li><button onclick="login()" id="login_button">登陆</button></li>
+        </ul>
+    </div>
+
+    <div id="game_recommend">
+        <img src="" alt="" id="img_content">
+        <input type="button" value="<" class="change_left"/>
+        <input type="button" value=">" class="change_right"/>
+        <div style="text-align: center" id="div_dots"></div>
+        <script>window.onload = game_recommend_slide;</script>
+    </div>
+
+    <div id="community_recommend">
+
+    </div>
+
+    <div id="game_list">
+
+    </div>
+
+</body>
+</html>

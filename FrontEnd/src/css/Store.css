@@ -1,0 +1,60 @@
+/* top bar*/
+#login_button{
+    text-align: right;
+}
+
+#search_button{
+    background: url(../../figures/icon/search_white_16.png);
+    width: 20px;
+    height: 20px;
+    text-align: right;
+}
+
+#top_bar_item{
+    margin: 50px auto;
+    width: 1040px;
+    height: 60px;
+    background-color: #fd882f;
+    float: left;
+}
+
+#top_bar_item ul{
+    list-style: none;
+    margin-left: 100px;
+}
+
+#top_bar_item li{
+    display: inline;
+}
+
+#top_bar_item a{
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+#top_bar_item a:hover{
+    background-color: #ff7000;
+}
+
+
+/* body */
+#body{
+    background: #ff9191;
+}
+
+
+/* game_recommend */
+#game_recommend{
+    width:1080px;    /*要显示图片框的大小*/
+    height:550px;
+    background: #8ceeee;
+    position: relative;
+    top: 150px;
+}
+
+#img_content{
+    margin-top: -120px;
+    margin-left: 30px;
+}
