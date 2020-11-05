@@ -18,9 +18,27 @@ function game_recommend_slide(){
         '../../figures/images/Cyberpunk2077.jpg',
         '../../figures/images/LegendOfZelda.jpg',
         '../../figures/images/RedDeadRedemption2.jpg'
-    ]
+    ];
+    let div_dots = document.getElementById("div_dots");
+    let dot = [];
+    for (let i = 0; i < images.length; i ++){
+        dot[i] = document.createElement("div");
+    }
+
+    for (let i = 0; i < images.length; i ++){
+        div_dots.appendChild(dot[i]);
+        div_dots.children[i].className = "dot";
+    }
+    let dots = div_dots.children;
+    for (let i = 0; i < dots.length; i ++){
+        dots[i].addEventListener("onclick", function (){
+            GAME_RECOMMEND_SLIDE_COUNTER = i;
+            curr_img.src = images[GAME_RECOMMEND_SLIDE_COUNTER];
+        });
+    }
+
     let curr_img = document.getElementById("img_content");
-    curr_img.src = images[GAME_RECOMMEND_SLIDE_COUNTER];
+    image_change();
     window.setInterval(image_change, 4000);
 }
 function image_change(){
@@ -30,10 +48,16 @@ function image_change(){
         '../../figures/images/Cyberpunk2077.jpg',
         '../../figures/images/LegendOfZelda.jpg',
         '../../figures/images/RedDeadRedemption2.jpg'
-    ]
+    ];
+    let dots = document.getElementById("div_dots").children;
     let curr_img = document.getElementById("img_content");
     curr_img.src = images[GAME_RECOMMEND_SLIDE_COUNTER];
+    dots[GAME_RECOMMEND_SLIDE_COUNTER].style.backgroundColor = "#d3d3d3";
+    let index = GAME_RECOMMEND_SLIDE_COUNTER-1===-1? images.length-1 : GAME_RECOMMEND_SLIDE_COUNTER-1;
+    dots[index].style.backgroundColor = "#808080";
     GAME_RECOMMEND_SLIDE_COUNTER++;
     if (GAME_RECOMMEND_SLIDE_COUNTER === images.length) GAME_RECOMMEND_SLIDE_COUNTER = 0;
 }
+
+
 
