@@ -54,15 +54,19 @@
     top: 150px;
 }
 
-#img_content{
-    margin-top: -150px;
-    margin-left: 30px;
+#img_content_1, #img_content_2{
+    position: absolute;
+    top: 20px;
+    left: 30px;
     width: 820px;
     height: 461px;
 }
 #div_dots{
+    position: absolute;
+    top: 500px;
+    left: 300px;
     margin: auto;
-    width: 400px;
+    width: 300px;
     height: 20px;
     display: flex;
 }
