@@ -26,10 +26,10 @@ let IS_SLIDE0_ONSHOW = true;// slide0正在展示则为true，slide1正在展示
 let GAME_RECOMMEND_INTERVAL = 0;
 function game_recommend_slide(){
     let images = [
-        '../../figures/images/AnimalCrossing.jpg',
-        '../../figures/images/Cyberpunk2077.jpg',
-        '../../figures/images/LegendOfZelda.jpg',
-        '../../figures/images/RedDeadRedemption2.jpg'
+        '../../figures/temporary/game_recommend/AnimalCrossing.jpg',
+        '../../figures/temporary/game_recommend/Cyberpunk2077.jpg',
+        '../../figures/temporary/game_recommend/LegendOfZelda.jpg',
+        '../../figures/temporary/game_recommend/RedDeadRedemption2.jpg'
     ];
     let slide = [document.getElementById("img_content_1"), document.getElementById("img_content_2")];
     let div_dots = document.getElementById("div_dots");
@@ -51,10 +51,10 @@ function game_recommend_slide(){
                 dots[x].style.backgroundColor = "#808080";
             dots[i].style.backgroundColor = "#d3d3d3";
             GAME_RECOMMEND_CURR_SLIDE = i;
-            GAME_RECOMMEND_NEXT_SLIDE = i===images.length-1? 0 : i+1;
+            GAME_RECOMMEND_NEXT_SLIDE = i===game_recommend.length-1? 0 : i+1;
             IS_SLIDE0_ONSHOW = true;
-            slide[0].src = images[GAME_RECOMMEND_CURR_SLIDE];
-            slide[1].src = images[GAME_RECOMMEND_NEXT_SLIDE];
+            slide[0].src = game_recommend[GAME_RECOMMEND_CURR_SLIDE];
+            slide[1].src = game_recommend[GAME_RECOMMEND_NEXT_SLIDE];
             slide[0].style.opacity = "1.0";
             slide[1].style.opacity = "0.0";
             GAME_RECOMMEND_INTERVAL = setInterval(image_change, 4000);
@@ -70,10 +70,10 @@ function game_recommend_slide(){
 
 function image_change() {
     let images = [
-        '../../figures/images/AnimalCrossing.jpg',
-        '../../figures/images/Cyberpunk2077.jpg',
-        '../../figures/images/LegendOfZelda.jpg',
-        '../../figures/images/RedDeadRedemption2.jpg'
+        '../../figures/temporary/game_recommend/AnimalCrossing.jpg',
+        '../../figures/temporary/game_recommend/Cyberpunk2077.jpg',
+        '../../figures/temporary/game_recommend/LegendOfZelda.jpg',
+        '../../figures/temporary/game_recommend/RedDeadRedemption2.jpg'
     ];
     let slide = [document.getElementById("img_content_1"), document.getElementById("img_content_2")];
     let div_dots = document.getElementById("div_dots");

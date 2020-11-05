@@ -5,6 +5,7 @@
 
 #search_button{
     background: url(../../figures/icon/search_white_16.png);
+    background-size: 100% 100%;
     width: 20px;
     height: 20px;
     text-align: right;
@@ -79,3 +80,98 @@
     height: 10px;
 }
 
+
+/* community_recommend */
+#community_recommend{
+    width: 1080px;
+    height: 550px;
+    background: #a1f5a1;
+    position: relative;
+    top: 200px;
+}
+
+#community_recommend_avatar{
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+
+#avatar{
+    transform: scale(0.4);
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+#username{
+    float: left;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+}
+#level{
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    top: 75px;
+    left: -20px;
+}
+#level_icon{
+    float: left;
+}
+#community_recommend_picture{
+    width: 400px;
+    height: 225px;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+}
+
+#community_picture{
+    transform: scale(0.3);
+    position: absolute;
+    top: -500px;
+    left: -650px;
+}
+
+#community_recommend_text{
+    border: 1px solid slategray;
+    width: 350px;
+    height: 225px;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
+#like_dislike{
+    width: 350px;
+    height: 30px;
+    position: absolute;
+    top: 230px;
+    text-align: center;
+}
+#like{
+    background: url("../../figures/icon/like.png");
+    background-size:100% 100%;
+    width: 30px;
+    height: 30px;
+}
+
+#dislike{
+    background: url("../../figures/icon/dislike.png");
+    background-size:100% 100%;
+    width: 30px;
+    height: 30px;
+}
+
+#comment{
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    top: 410px;
+    left: 40px;
+}
+#comment_text{
+    width: 560px;
+    height: 80px;
+}
